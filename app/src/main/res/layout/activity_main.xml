@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.Toolbar
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#701dc4"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:textAlignment="center"
+        app:titleMarginEnd="@dimen/activity_horizontal_margin"
+        app:title="HOME AUTOMATION" />
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Control Home Appliance"
+            android:id="@+id/button"
+            android:textSize="20sp"
+            android:layout_marginTop="59dp"
+
+            android:background="#db1d10a6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Virtual Assistant"
+            android:textSize="20sp"
+            android:id="@+id/button2"
+            android:background="#db1d10a6"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/button" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Statistics"
+            android:textSize="20sp"
+            android:id="@+id/button3"
+            android:background="#db1d10a6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button2"
+            android:layout_marginBottom="57dp" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Click Me" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_gravity="center"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:layout_width="250dp"
+                android:visibility="visible"
+                android:layout_height="250dp"
+                android:indeterminate="false" />
+
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>
